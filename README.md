@@ -10,10 +10,10 @@ Interactive Device Simulator
    - Note: Depending on how you install Python, the commands below may start with 'py' or they may start with 'python'.
 
 2. Install required packages
-   py -3 -m pip install numpy
-   py -3 -m pip install PyQt5
-   py -3 -m pip install PyOpenGL
-   py -3 -m pip install matplotlib
+ - py -3 -m pip install numpy
+ - py -3 -m pip install PyQt5
+ - py -3 -m pip install PyOpenGL
+ - py -3 -m pip install matplotlib
 
 3. Run BasicMOSFET3.py
    py -3 BasicMOSFET3.py
