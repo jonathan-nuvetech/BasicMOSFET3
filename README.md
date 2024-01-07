@@ -9,6 +9,7 @@ LinkedIn: [Linkedin](https://www.linkedin.com/in/jonathanrabe)
 Support: [Buy me a coffee](https://www.buymeacoffee.com/jonathanrabe)  
 
 ## Running Steps
+Make sure that the device.json, and BasicMOSFET3.py files are in the same directory. Navigate to this directory in a terminal.  
 1. Install Python 3 (if not installed)
    - Note: Make sure to check "Add Python 3.x to PATH" during installation
    - If Python is already installed, you can skip this step
