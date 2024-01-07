@@ -1,0 +1,187 @@
+# MIT License
+# 
+# Copyright (c) 2024 Jonathan Rabe
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+
+
+{
+    "device_parts": [
+        {
+            # Name of this device part (can be any string)
+            "name": "Source",
+            # RGB color values ranging from 0.0 to 1.0
+            "color": [0.0, 0.0, 1.0],
+            # List of 3D vertices defining the geometry of the part
+            "vertices": [
+                # Vertex 1: [X, Y, Z] coordinates
+                [-0.5, -0.25, -1.0],
+                # Vertex 2: [X, Y, Z] coordinates
+                [0.3, -0.25, -1.0],
+                # Vertex 3: [X, Y, Z] coordinates
+                [0.3, 0.25, -1.0],
+                # Vertex 4: [X, Y, Z] coordinates
+                [-0.5, 0.25, -1.0],
+                # Vertex 5: [X, Y, Z] coordinates
+                [-0.5, -0.25, 1.0],
+                # Vertex 6: [X, Y, Z] coordinates
+                [0.3, -0.25, 1.0],
+                # Vertex 7: [X, Y, Z] coordinates
+                [0.3, 0.25, 1.0],
+                # Vertex 8: [X, Y, Z] coordinates
+                [-0.5, 0.25, 1.0]
+            ],
+            # Doping information for Source
+            "doping": {
+                # Type of doping (e.g., "n-type" or "p-type")
+                "type": "n-type",
+                # Doping concentration in cm^-3
+                "concentration": 1e17
+            }
+        },
+        {
+            # Name of this device part (can be any string)
+            "name": "Drain",
+            # RGB color values ranging from 0.0 to 1.0
+            "color": [0.0, 1.0, 0.0],
+            # List of 3D vertices defining the geometry of the part
+            "vertices": [
+                # Vertex 1: [X, Y, Z] coordinates
+                [1.7, -0.25, -1.0],
+                # Vertex 2: [X, Y, Z] coordinates
+                [2.5, -0.25, -1.0],
+                # Vertex 3: [X, Y, Z] coordinates
+                [2.5, 0.25, -1.0],
+                # Vertex 4: [X, Y, Z] coordinates
+                [1.7, 0.25, -1.0],
+                # Vertex 5: [X, Y, Z] coordinates
+                [1.7, -0.25, 1.0],
+                # Vertex 6: [X, Y, Z] coordinates
+                [2.5, -0.25, 1.0],
+                # Vertex 7: [X, Y, Z] coordinates
+                [2.5, 0.25, 1.0],
+                # Vertex 8: [X, Y, Z] coordinates
+                [1.7, 0.25, 1.0]
+            ],
+            # Doping information for Drain
+            "doping": {
+                # Type of doping (e.g., "n-type" or "p-type")
+                "type": "n-type",
+                # Doping concentration in cm^-3
+                "concentration": 5e16
+            }
+        },
+        {
+            # Name of this device part (can be any string)
+            "name": "Gate",
+            # RGB color values ranging from 0.0 to 1.0
+            "color": [1.0, 0.0, 0.0],
+            # List of 3D vertices defining the geometry of the part
+            "vertices": [
+                # Vertex 1: [X, Y, Z] coordinates
+                [0.25, 0.375, -1.0],
+                # Vertex 2: [X, Y, Z] coordinates
+                [1.75, 0.375, -1.0],
+                # Vertex 3: [X, Y, Z] coordinates
+                [1.75, 0.625, -1.0],
+                # Vertex 4: [X, Y, Z] coordinates
+                [0.25, 0.625, -1.0],
+                # Vertex 5: [X, Y, Z] coordinates
+                [0.25, 0.375, 1.0],
+                # Vertex 6: [X, Y, Z] coordinates
+                [1.75, 0.375, 1.0],
+                # Vertex 7: [X, Y, Z] coordinates
+                [1.75, 0.625, 1.0],
+                # Vertex 8: [X, Y, Z] coordinates
+                [0.25, 0.625, 1.0]
+            ],
+            # Doping information for Gate
+            "doping": {
+                # Type of doping (e.g., "n-type" or "p-type")
+                "type": "p-type",
+                # Doping concentration in cm^-3
+                "concentration": 1e18
+            }
+        },
+        {
+            # Name of this device part (can be any string)
+            "name": "Body",
+            # RGB color values ranging from 0.0 to 1.0
+            "color": [0.0, 0.1, 0.1],
+            # List of 3D vertices defining the geometry of the part
+            "vertices": [
+                # Vertex 1: [X, Y, Z] coordinates
+                [0.3, -0.25, -1.0],
+                # Vertex 2: [X, Y, Z] coordinates
+                [1.7, -0.25, -1.0],
+                # Vertex 3: [X, Y, Z] coordinates
+                [1.7, 0.25, -1.0],
+                # Vertex 4: [X, Y, Z] coordinates
+                [0.3, 0.25, -1.0],
+                # Vertex 5: [X, Y, Z] coordinates
+                [0.3, -0.25, 1.0],
+                # Vertex 6: [X, Y, Z] coordinates
+                [1.7, -0.25, 1.0],
+                # Vertex 7: [X, Y, Z] coordinates
+                [1.7, 0.25, 1.0],
+                # Vertex 8: [X, Y, Z] coordinates
+                [0.3, 0.25, 1.0]
+            ],
+            # Doping information for the Body (use "body" as the type)
+            "doping": {
+                # Type of doping (e.g., "n-type" or "p-type")
+                "type": "p-type",
+                # Doping concentration in cm^-3
+                "concentration": 5e15
+            }
+        },
+        {
+            # Name of this device part (can be any string)
+            "name": "GateOxide",
+            # RGB color values ranging from 0.0 to 1.0
+            "color": [0.5, 0.5, 0.5],
+            # List of 3D vertices defining the geometry of the part
+            "vertices": [
+                # Vertex 1: [X, Y, Z] coordinates
+                [0.25, 0.25, -1.0],
+                # Vertex 2: [X, Y, Z] coordinates
+                [1.75, 0.25, -1.0],
+                # Vertex 3: [X, Y, Z] coordinates
+                [1.75, 0.375, -1.0],
+                # Vertex 4: [X, Y, Z] coordinates
+                [0.25, 0.375, -1.0],
+                # Vertex 5: [X, Y, Z] coordinates
+                [0.25, 0.25, 1.0],
+                # Vertex 6: [X, Y, Z] coordinates
+                [1.75, 0.25, 1.0],
+                # Vertex 7: [X, Y, Z] coordinates
+                [1.75, 0.375, 1.0],
+                # Vertex 8: [X, Y, Z] coordinates
+                [0.25, 0.375, 1.0]
+            ],
+            # Doping information for GateOxide (use "oxide" as the type)
+            "doping": {
+                # Type of doping (e.g., "oxide" for non-doped)
+                "type": "oxide",
+                # Doping concentration (set as null or any suitable value)
+                "concentration": null
+            }
+        }
+    ]
+}
