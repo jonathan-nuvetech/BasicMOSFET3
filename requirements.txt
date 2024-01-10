@@ -1,0 +1,6 @@
+# requirements.txt
+
+numpy
+PyQt5
+PyOpenGL
+matplotlib
